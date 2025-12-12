@@ -1,0 +1,234 @@
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        ::-webkit-scrollbar{
+            width: 5px;
+            background: transparent;
+        }
+
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .fade-in {
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* --- Swiper Custom Styling --- */
+        .swiper {
+            width: 100%;
+            padding-bottom: 50px !important;
+            padding-top: 50px !important;
+            overflow: hidden !important;
+        }
+
+        .vaccine-card {
+            transition: all 0.4s ease-out;
+            background-color: white;
+            border: 1px solid #f3f4f6;
+            height: 100%;
+            transform: scale(0.9);
+            opacity: 0.8;
+        }
+
+        /* Styles specifically for the Vaccine Swiper (Zoom Effect) */
+        .vaccineSwiper .vaccine-card h3 {
+            color: #111827;
+        }
+
+        .vaccineSwiper .vaccine-card p {
+            color: #6B7280;
+        }
+
+        .vaccineSwiper .vaccine-icon-box {
+            background-color: #EFF6FF;
+            color: #17C2EC;
+        }
+
+        .vaccineSwiper .swiper-slide-active .vaccine-card {
+            background-color: #0B153C;
+            transform: scale(1.1);
+            opacity: 1;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            border-color: #0B153C;
+        }
+
+        .vaccineSwiper .swiper-slide-active .vaccine-card h3 {
+            color: white !important;
+        }
+
+        .vaccineSwiper .swiper-slide-active .vaccine-card p {
+            color: #9CA3AF !important;
+        }
+
+        .vaccineSwiper .swiper-slide-active .vaccine-icon-box {
+            background-color: rgba(23, 194, 236, 0.2);
+            color: #17C2EC;
+        }
+
+        /* Styles for Location Swiper (Simple Slide, No Zoom) */
+        .locationSwiper {
+            padding-top: 20px !important;
+            /* Less padding as no zoom needed */
+        }
+
+        .locationSwiper .swiper-slide {
+            height: auto;
+            /* Ensure equal height cards */
+        }
+
+        .swiper-pagination-bullet {
+            background: #cbd5e1;
+            opacity: 1;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: #17C2EC;
+            width: 20px;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+
+
+
+        /* -----FAQS Section Styles----- */
+
+        /* Accordion Animation */
+        .accordion-content {
+            transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+        }
+        .accordion-item.active .accordion-content {
+            max-height: 200px; /* Adjust based on content */
+            opacity: 1;
+        }
+        .accordion-item.active .chevron-icon {
+            transform: rotate(180deg);
+        }
+        .accordion-item.active {
+            border-color: #17C2EC; /* primary color */
+            box-shadow: 0 10px 15px -3px rgba(23, 194, 236, 0.1);
+        }
+
+        /* -----terms & conditions styles----- */
+
+        ul.custom-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        ul.custom-list li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.6rem;
+            width: 6px;
+            height: 6px;
+            background-color: #17C2EC; /* primary */
+            border-radius: 50%;
+        }
+
+        /* Custom Radio Button styling for Slots/Vaccines */
+        .custom-radio:checked + div {
+            border-color: #17C2EC;
+            background-color: #ecfeff; /* cyan-50 */
+            color: #0e7490; /* cyan-700 */
+        }
+        .custom-radio:checked + div .check-icon {
+            opacity: 1;
+        }
+
+
+        /* -----appointment page styles-----  */
+
+
+          /* Status Badges */
+        .status-confirmed { background-color: #ecfdf5; color: #059669; border: 1px solid #d1fae5; }
+        .status-pending { background-color: #fffbeb; color: #d97706; border: 1px solid #fef3c7; }
+        .status-completed { background-color: #eff6ff; color: #1d4ed8; border: 1px solid #dbeafe; }
+        
+        /* Active Tab Style */
+        .tab-btn.active {
+            background-color: #0B153C; /* darkblue */
+            color: white;
+            border-color: #0B153C;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+    
+        /* -----parents profile page styles----- */
+    
+          /* Status Badges */
+        .badge-full { background-color: #ecfdf5; color: #059669; border: 1px solid #d1fae5; }
+        .badge-partial { background-color: #fffbeb; color: #d97706; border: 1px solid #fef3c7; }
+
+
+        /* -----hospital inventory page styles----- */
+
+           /* Status Badges */
+        .badge-high { background-color: #ecfdf5; color: #059669; border: 1px solid #d1fae5; } /* Green */
+        .badge-low { background-color: #fffbeb; color: #d97706; border: 1px solid #fef3c7; } /* Orange */
+        .badge-out { background-color: #fef2f2; color: #dc2626; border: 1px solid #fee2e2; } /* Red */
+        
+        /* Progress Bars */
+        .progress-high { background-color: #10b981; }
+        .progress-low { background-color: #f59e0b; }
+        .progress-critical { background-color: #ef4444; }
+
+        /* Sidebar Transition */
+        .sidebar {
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        /* Dropdown Animation */
+        .dropdown-menu {
+            transform-origin: top right;
+            transition: transform 0.1s ease-out, opacity 0.1s ease-out;
+            transform: scale(0.95);
+            opacity: 0;
+            pointer-events: none;
+        }
+        .dropdown-menu.show {
+            transform: scale(1);
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        /* -----hospital Appointment page styles----- */
+
+            /* Status Badges */
+        .status-scheduled { background-color: #ecfeff; color: #0891b2; border: 1px solid #cffafe; }
+        .status-checked-in { background-color: #ecfdf5; color: #059669; border: 1px solid #d1fae5; }
+        .status-pending { background-color: #fffbeb; color: #d97706; border: 1px solid #fef3c7; }
+        
+        /* Active Tab Style */
+        .tab-btn.active {
+            background-color: #0B153C; /* darkblue */
+            color: white;
+            border-color: #0B153C;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+
+        
