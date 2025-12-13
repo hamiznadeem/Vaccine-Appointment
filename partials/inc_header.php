@@ -24,7 +24,7 @@ $current_page = basename($_SERVER['SCRIPT_NAME']);
     <link rel="icon" type="image/png" sizes="16x16" href="./asset/favicon/favicon-16x16.png">
     <link rel="icon" type="ico"  href="asset/favicon/favicon.ico">
     <!-- main css files -->
-    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/base.css?v=1.1">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
@@ -54,6 +54,15 @@ $current_page = basename($_SERVER['SCRIPT_NAME']);
 </head>
 
 <body class="bg-slate-50 text-slate-800 overflow-x-hidden flex flex-col min-h-screen relative">
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-name flex justify-center items-center gap-2">Vaccining
+        <span class="loading loading-ring loading-xl"></span>
+        <span class="loading loading-ring loading-lg"></span>
+        <span class="loading loading-ring loading-md"></span>
+        </div>
+    </div>
 
     <!-- Navbar -->
     <nav class="fixed top-6 left-0 right-0 z-50 flex justify-center px-4 md:px-6">

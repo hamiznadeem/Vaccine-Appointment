@@ -1,4 +1,10 @@
-        document.addEventListener('DOMContentLoaded', function () {
+        window.addEventListener('load', function() {
+    setTimeout(function() {
+        document.body.classList.add('loaded');
+    }, 2000);
+});
+
+document.addEventListener('DOMContentLoaded', function () {
             // Initialize Icons
             lucide.createIcons();
 
