@@ -2,6 +2,11 @@
 ob_start();
 include 'admin_partials/inc_header.php';
 
+if ($user_role == 2 ) {
+    header('Location: dashboard.php');
+    exit;
+}
+
 
 $message = '';
 $error = '';

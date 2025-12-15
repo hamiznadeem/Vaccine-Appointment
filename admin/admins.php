@@ -1,7 +1,7 @@
 <?php
 include 'admin_partials/inc_header.php';
 
-if ($user_role = 2 ) {
+if ($user_role == 2 ) {
     header('Location: dashboard.php');
     exit;
 }
