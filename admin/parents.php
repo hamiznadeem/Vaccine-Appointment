@@ -182,7 +182,7 @@ $result = mysqli_query($conn, $sql);
                                             <i data-lucide="more-vertical" class="w-4 h-4"></i>
                                         </button>
                                         <div class="dropdown-menu absolute right-8 top-8 w-40 bg-white rounded-xl shadow-xl border border-gray-100 z-10 overflow-hidden">
-                                            <a href="?edit_id=<?php echo $row['parent_id']; ?>" class="block px-4 py-2 text-left text-xs font-medium text-gray-700 hover:bg-gray-50 hover:text-primary flex items-center gap-2">
+                                            <a href="parent_view.php?id=<?php echo $row['parent_id']; ?>" class="block px-4 py-2 text-left text-xs font-medium text-gray-700 hover:bg-gray-50 hover:text-primary flex items-center gap-2">
                                                 <i data-lucide="view" class="w-3 h-3"></i> View
                                             </a>
                                             <a href="?action=block&id=<?php echo $row['parent_id']; ?>" class="block px-4 py-2 text-left text-xs font-medium <?php echo ($row['isActive'] ?? 0) ? 'text-red-500' : 'text-green-600'; ?> hover:bg-red-50 flex items-center gap-2" onclick="return confirm('Are you sure?');">

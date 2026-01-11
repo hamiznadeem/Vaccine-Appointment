@@ -96,7 +96,7 @@ if (isset($_GET['id']) && isset($_GET['action']) && $_GET['action'] == 'status')
                                 <i data-lucide="hash" class="w-3 h-3 text-primary"></i> ID: #<?php echo $child['child_id']; ?>
                             </div>
                             <div class="flex items-center gap-1 text-xs font-bold text-darkblue bg-gray-50 px-2 py-1 rounded-lg">
-                                <i data-lucide="calendar-clock" class="w-3 h-3 text-primary"></i> Registration Date : <?php echo $child['create_date']; ?>
+                                <i data-lucide="calendar-clock" class="w-3 h-3 text-primary"></i> Chlid Added Date : <?php echo $child['create_date']; ?>
                             </div>
                         </div>
                     </div>
