@@ -80,7 +80,7 @@ if ($result && mysqli_num_rows($result) > 0) {
             <p class="text-gray-500 mt-2 text-sm max-w-lg">Manage your upcoming vaccination slots and view history.</p>
         </div>
 
-        <a href="parents_appointment.php" class="px-6 py-3 bg-darkblue text-white rounded-xl font-bold shadow-lg shadow-blue-900/20 hover:bg-cyan-500 transition flex items-center gap-2 text-sm group">
+        <a href="parents_appointments.php" class="px-6 py-3 bg-darkblue text-white rounded-xl font-bold shadow-lg shadow-blue-900/20 hover:bg-cyan-500 transition flex items-center gap-2 text-sm group">
             <i data-lucide="plus" class="w-4 h-4 group-hover:rotate-90 transition duration-300"></i> Book New Slot
         </a>
     </div>
